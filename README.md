@@ -50,16 +50,15 @@ Version 0.3.0 is skills-only. It has no MCP server, does not independently acces
 
 The plugin supports decision hygiene; it does not replace professional legal, medical, financial, security, or employment judgment.
 
-### Installation
 
-Run:
+Settings at the bottom:
 
-codex plugin marketplace add danyadotan/bridge-it-bouncer
+- **Set as the latest release:** Yes
+- **Set as a pre-release:** No
+- **Create a discussion:** No
+- **Generate release notes:** Don’t click—it may add unnecessary commit details.
+- **Attach binaries:** Leave empty; GitHub generates source ZIP/TAR files automatically.
 
-Then install **Bridge-iT Bouncer** from the plugin browser and begin a new session.
+Then click **Save draft**, not **Publish release**, because we should add the `LICENSE` file first.
 
-### Publisher
 
-Created by **Danya Dotan — Bridge-iT**.
-
-Bridge-iT is building execution infrastructure for AI-native organizations: change the environment, not the person.
