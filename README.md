@@ -50,24 +50,15 @@ Version 0.3.0 is skills-only. It has no MCP server, does not independently acces
 
 The plugin supports decision hygiene; it does not replace professional legal, medical, financial, security, or employment judgment.
 
-## Install from this marketplace
+### Installation
 
-Supported Codex clients can add this repository as a marketplace source:
+Run:
 
-```bash
 codex plugin marketplace add danyadotan/bridge-it-bouncer
-```
 
-Then install **Bridge-iT Bouncer** from the plugin browser and start a new session.
+Then install **Bridge-iT Bouncer** from the plugin browser and begin a new session.
 
-## Repository layout
-
-- `plugins/bridge-it-bouncer/` — portable plugin package
-- `.agents/plugins/marketplace.json` — repository marketplace catalog
-- `tests/acceptance-cases.md` — reproducible behavior checks
-- `PRIVACY.md`, `TERMS.md`, `SUPPORT.md` — public-use information
-
-## Publisher
+### Publisher
 
 Created by **Danya Dotan — Bridge-iT**.
 
