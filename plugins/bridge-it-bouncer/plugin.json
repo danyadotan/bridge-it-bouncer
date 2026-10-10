@@ -1,0 +1,39 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "bridge-it-bouncer",
+  "version": "0.3.0",
+  "description": "Verifies and consolidates AI-generated work before presenting the smallest necessary human decision.",
+  "author": {
+    "name": "Danya Dotan - Bridge-iT"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Bridge-iT Bouncer",
+        "shortDescription": "AI output to one decision",
+        "longDescription": "Bridge-iT Bouncer protects human attention in AI-native workflows. Hygiene Gate inspects outputs for duplication, contradictions, unsupported urgency, unnecessary personal information, material changes, and permission gaps. Closure Gate then presents only verified decisions that genuinely require human judgment. The plugin is skills-only: it does not independently connect to external services, collect data, or execute actions. Users provide the material to review and remain responsible for consequential decisions.",
+        "developerName": "Danya Dotan - Bridge-iT",
+        "category": "Productivity",
+        "capabilities": [
+          "Interactive"
+        ],
+        "defaultPrompt": [
+          "Check these agent outputs and route anything that does not need my attention.",
+          "Show me only the verified decision that genuinely requires my judgment.",
+          "Verify whether this work is ready for closure."
+        ],
+        "websiteURL": "https://github.com/danyadotan/bridge-it-bouncer",
+        "supportURL": "https://github.com/danyadotan/bridge-it-bouncer/issues",
+        "privacyPolicyURL": "https://github.com/danyadotan/bridge-it-bouncer/blob/main/PRIVACY.md",
+        "termsOfServiceURL": "https://github.com/danyadotan/bridge-it-bouncer/blob/main/TERMS.md",
+        "brandColor": "#111111",
+        "brandColorDark": "#F5F2EA",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      },
+      "publication": {
+        "release_notes": "Initial public release of Bridge-iT Bouncer with Hygiene Gate and Closure Gate."
+      }
+    }
+  }
+}

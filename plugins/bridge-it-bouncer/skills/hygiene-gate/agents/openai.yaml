@@ -1,0 +1,8 @@
+interface:
+  display_name: Hygiene Gate
+  short_description: Checks and cleans agent work before review
+  default_prompt: Use $hygiene-gate to verify, reconcile, and route these agent outputs.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true

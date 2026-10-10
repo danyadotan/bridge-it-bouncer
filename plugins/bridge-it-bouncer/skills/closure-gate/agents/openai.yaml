@@ -1,0 +1,8 @@
+interface:
+  display_name: Closure Gate
+  short_description: Turns agent output into one human decision
+  default_prompt: Use $closure-gate to show me only what genuinely needs my decision.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true
