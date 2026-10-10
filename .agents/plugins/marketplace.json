@@ -8,7 +8,7 @@
       "name": "bridge-it-bouncer",
       "source": {
         "source": "local",
-        "path": "../../plugins/bridge-it-bouncer"
+        "path": "./plugins/bridge-it-bouncer"
       },
       "policy": {
         "installation": "AVAILABLE",
