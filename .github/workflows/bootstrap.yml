@@ -1,0 +1,27 @@
+name: Publish Bridge-iT Bouncer
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/bootstrap.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Expand public release
+        shell: bash
+        run: |
+          tar -xzf bridge-it-bouncer-bootstrap.tar.gz -C .
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm -f bridge-it-bouncer-bootstrap.tar.gz
+          git rm -f .github/workflows/bootstrap.yml
+          git add -A
+          git commit -m "Publish Bridge-iT Bouncer v0.3.0"
+          git push
